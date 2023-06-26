@@ -3,4 +3,3 @@ numpy
 flask
 flask-cors
 lightgbm
--e .

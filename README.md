@@ -1,4 +1,4 @@
-# Bigmart-Sales-Prediction-Ineuron-Internship-
+# Sales-Prediction-Ineuron-Internship-
 
 OBJECTIVE : 
 
@@ -37,3 +37,7 @@ STEPS INVOLVED IN MODEL BUILDING :
 (ix)Push to Github
 
 (x)Deployment
+
+
+#Run the flask application
+python app.py
