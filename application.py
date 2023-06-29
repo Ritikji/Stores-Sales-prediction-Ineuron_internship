@@ -3,14 +3,14 @@ import joblib
 import os
 import numpy as np
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 
-@app.route("/")
+@application.route("/")
 def index():
     return render_template("home.html")
 
-@app.route('/predict',methods=['POST','GET'])
+@application.route('/predict',methods=['POST','GET'])
 def result():
 
     item_weight= float(request.form['item_weight'])
@@ -40,5 +40,5 @@ def result():
     return jsonify({'Prediction': float(Y_pred)})
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    application.run(debug=True, port=5000)
 
